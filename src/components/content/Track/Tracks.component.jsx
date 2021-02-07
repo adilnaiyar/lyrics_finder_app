@@ -12,7 +12,7 @@ const Tracks = () => {
                 if(track_list === undefined || track_list.length === 0){
                     return <Spinner />
                 }else{
-                    console.log(track_list);
+                    //console.log(track_list);
                     return(
                         <React.Fragment>
                             <h3 className="text-center mb-4">{ heading }</h3>
