@@ -6,8 +6,6 @@ import Index from './components/layout/Index/Index.component';
 import Lyrics from './components/content/Lyrics/Lyrics.component';
 import { Provider } from './context/context.component';
 
-import './App.css';
-
 function App() {
   return (
     <Provider>

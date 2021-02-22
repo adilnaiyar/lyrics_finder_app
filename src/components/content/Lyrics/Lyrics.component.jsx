@@ -40,10 +40,10 @@ class Lyrics extends Component {
         }else{
             return ( 
                 <React.Fragment>
-                    <Link to="/" className="btn btn-dark btn-sm mb-4"> 
+                    <Link to="/" className="btn btn-dark btn-sm text-dark mb-4 trnasparent"> 
                     Go Back 
                     </Link>
-                    <div className="card">
+                    <div className="card mb-4 shadow-sm trnasparent">
                         <h5 className="card-header">
                             {track.track_name} by{" "}
                             <span className="text-secondary">{track.artist_name}</span>
@@ -52,22 +52,22 @@ class Lyrics extends Component {
                             <p className="card-text">{lyrics.lyrics_body}</p>
                         </div>
                     </div>
-                    <ul className="list-group mt-3">
-                        <li className="list-group-item">
+                    <ul className="list-group mt-3 trnasparent">
+                        <li className="list-group-item trnasparent">
                             <strong>Album ID</strong>: {track.album_id}
                         </li>
-                        <li className="list-group-item">
+                        <li className="list-group-item trnasparent">
                             <strong>Song Genre</strong>:{" "}
                             {track.primary_genres.music_genre_list.length === 0
                             ? "NO GENRE AVAILABLE"
                             : track.primary_genres.music_genre_list[0].music_genre
                                 .music_genre_name}
                         </li>
-                        <li className="list-group-item">
+                        <li className="list-group-item trnasparent">
                             <strong>Explicit Words</strong>:{" "}
                             {track.explicit === 0 ? "No" : "Yes"}
                         </li>
-                        <li className="list-group-item">
+                        <li className="list-group-item trnasparent">
                             <strong>Release Date</strong>:{" "}
                             <Moment format="DD/MM/YYYY">
                             {track.first_release_date}

@@ -15,7 +15,7 @@ const Tracks = () => {
                     //console.log(track_list);
                     return(
                         <React.Fragment>
-                            <h3 className="text-center mb-4">{ heading }</h3>
+                            <h3 className="text-center text-white mb-4">{ heading }</h3>
                             <div className="row">
                                 {track_list.map(item => (
                                     <TrackList  key={item.track.track_id} track={item.track}/>
